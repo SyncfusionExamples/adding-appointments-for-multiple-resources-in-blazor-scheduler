@@ -1,0 +1,82 @@
+﻿@page "/"
+
+
+    <SfSchedule TValue="AppointmentDataModel" @bind-SelectedDate="@CurrentDate"
+                Height="600px" Width="100%">
+        <ScheduleResources>
+            <ScheduleResource TValue="int[]" TItem="ResourceDataModel" 
+                DataSource="@ResourceData" Field="ResourceId"
+                 Title="Resource Name" Name="Resources" TextField="PersonName" 
+                IdField="PersonId" ColorField="Color" AllowMultiple="true" >
+            </ScheduleResource>
+        </ScheduleResources>
+        <ScheduleEventSettings DataSource="@ScheduleData">
+        </ScheduleEventSettings>
+    </SfSchedule>
+
+
+@code {
+
+    DateTime CurrentDate = new DateTime(2021, 5, 16);
+
+    public class AppointmentDataModel
+    {
+        public int Id { get; set; }
+
+        public string Subject { get; set; }
+
+        public DateTime StartTime { get; set; }
+
+        public DateTime EndTime { get; set; }
+
+        public int ResourceId { get; set; }
+
+    }
+
+    public class ResourceDataModel
+    {
+        public int PersonId { get; set; }
+        public string PersonName { get; set; }
+        public string Color { get; set; }
+    }
+
+    List<ResourceDataModel> ResourceData = new List<ResourceDataModel>
+    {
+        new ResourceDataModel {PersonId=1, PersonName="John", Color="#ea7a57"},
+        new ResourceDataModel {PersonId=2, PersonName="Robert", Color="#df5286"},
+        new ResourceDataModel {PersonId=3, PersonName="Steve", Color="#865fcf"}
+    };
+    List<AppointmentDataModel> ScheduleData = new List<AppointmentDataModel>
+    {
+        new AppointmentDataModel
+        {
+            Id = 1,
+            Subject = "Skarting",
+            StartTime = new DateTime(2021, 5, 17, 6, 0, 0),
+            EndTime = new DateTime(2021, 5, 17, 7, 0, 0),
+            ResourceId= 1
+
+        },
+        new AppointmentDataModel
+        {
+            Id = 2,
+            Subject = "Swimming",
+            StartTime = new DateTime(2021, 5, 19, 8, 0, 0),
+            EndTime = new DateTime(2021, 5, 19, 9, 0, 0),
+            ResourceId=2
+        },
+        new AppointmentDataModel
+        {
+            Id = 3,
+            Subject = "Table Tennis",
+            StartTime = new DateTime(2021, 5, 21, 10, 0, 0),
+            EndTime = new DateTime(2021, 5, 21, 11, 0, 0),
+            ResourceId=3
+        }
+
+    };
+
+}
+
+
+
