@@ -2,7 +2,7 @@
 
 ## Repository Description
 
-A comprehensive Blazor project that demonstrates how to add appointments for multiple resources in the Blazor Scheduler component. This project serves as a learning resource for developers looking to implement resource management and multi-resource scheduling scenarios in their Blazor applications.
+A comprehensive Blazor project that demonstrates how to add appointments for multiple resources in the [Blazor Scheduler](https://www.syncfusion.com/blazor-components/blazor-scheduler) component. This project serves as a learning resource for developers looking to implement resource management and multi-resource scheduling scenarios in their Blazor applications.
 
 ## Project Overview
 
