@@ -1,12 +1,6 @@
 # Adding Appointments for Multiple Resources in Blazor Scheduler
 
-## Repository Description
-
-A comprehensive Blazor project that demonstrates how to add appointments for multiple resources in the [Blazor Scheduler](https://www.syncfusion.com/blazor-components/blazor-scheduler) component. This project serves as a learning resource for developers looking to implement resource management and multi-resource scheduling scenarios in their Blazor applications.
-
-## Project Overview
-
-This project provides a quick-start implementation for working with multiple resources in the Syncfusion Blazor Scheduler. You will learn how to define a resource data source, map resources with appointments, and leverage various resource options available in the Blazor Scheduler component. The project includes practical examples and best practices for managing complex scheduling scenarios with multiple resources.
+This Blazor project demonstrates how to manage and schedule appointments across multiple resources using the [Blazor Scheduler](https://www.syncfusion.com/blazor-components/blazor-scheduler) component. It provides a quick-start implementation that covers defining resource data sources, mapping resources to appointments, and utilizing various resource configurations. The sample serves as a practical reference for building multi-resource scheduling applications and handling complex scheduling scenarios in Blazor.
 
 ## Features
 
@@ -21,15 +15,13 @@ This project provides a quick-start implementation for working with multiple res
 
 * Visual Studio 2022
 * .NET 6.0 or later
-* Syncfusion Blazor License (or community license for development)
 
 ## How to Run the Project
 
-1. Checkout this project to a location in your disk
+1. Checkout this project to your local machine
 2. Open the solution file using Visual Studio 2022
-3. Restore the NuGet packages by rebuilding the solution
-4. Run the project
-5. Open your browser and navigate to the application URL
+3. Build the solution to restore the required NuGet packages
+4. Press `F5` to start the application and navigate to the Scheduler component page
 
 ## Live Examples
 
