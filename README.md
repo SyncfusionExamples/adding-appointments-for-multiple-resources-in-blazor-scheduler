@@ -13,15 +13,15 @@ This Blazor project demonstrates how to manage and schedule appointments across 
 
 ## Prerequisites
 
-* Visual Studio 2022
-* .NET 6.0 or later
+* [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later
+* Visual Studio Code (with the C# Dev Kit extension) or Visual Studio 2022 version 17.14 or later
 
 ## How to Run the Project
 
 1. Checkout this project to your local machine
-2. Open the solution file using Visual Studio 2022
-3. Build the solution to restore the required NuGet packages
-4. Press `F5` to start the application
+2. Open the project folder in Visual Studio Code
+3. Run `dotnet restore` to restore the required NuGet packages
+4. Run `dotnet run` (or press `F5`) to start the application
 
 ## Live Examples
 
@@ -35,7 +35,7 @@ This Blazor project demonstrates how to manage and schedule appointments across 
 
 ## Troubleshooting
 
-* Ensure you have the latest Visual Studio 2022 version installed
+* Ensure you have the latest .NET 10 SDK installed
 * Verify that all NuGet packages are properly restored
 * Check that your .NET version matches the project requirements
 * Review the browser console for any JavaScript errors
